@@ -359,11 +359,19 @@ body {
 }
 
 .socials .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    
+    grid-template-columns: auto  1fr auto;
+    grid-template-areas:
+     "rights . socials-panel"   
+}
+
+.socials-panel {
+    grid-area: socials-panel;
 }
 
 .rights {
+    grid-area: rights;
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
@@ -523,12 +531,9 @@ body {
      "rights"
 } 
 
-.socials-panel {
-    grid-area: socials-panel;
-}
+
 
 .rights {
-    grid-area: rights;
     margin-top: 40px;
 }
 
