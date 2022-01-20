@@ -28,128 +28,14 @@ body {
     margin-right: 33px;
 }
 
-.intro {
-    background-color: #F1E4E6;
-}
-
-.intro .container {
-    display: flex;
-    align-items: center;
-    min-height: 375px;
-    justify-content: space-between;
-}
-
-.man {
-    display: flex;
-}
-
-.man img {
-    width: 100%;
-    height: auto;
-}
-
-.title {
-    display: flex;
-    margin-right: 100px;
-    flex-basis: 405px;
-    flex-shrink: 0;
-}
-
-.rectangle {
-    margin-right: 16px;
-}
-
-.title-1st-line {
-    font-weight: 900;
-    font-size: 48px;
-}
-
-.title-2nd-line {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-.title-marked-red {
-    color: rgb(233, 99, 99);
-}
-
-.special-offers-list {
-    margin-top: 65px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    grid-template-areas:
-     "for-women for-men for-kids"
-     "accesories accesories accesories"
-}
-
-.special-offer {
-    position: relative;
-}
-
-.special-offer img {
-    width: 100%;
-    height: auto;
-}
-
-.special-offer-text {
-    width: 100%;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.special-offer-marked {
-    font-size: 24px;
-    color: #F16D7F;
-}
-
-.for-women {
-    grid-area: for-women;
-}
-
-.for-men {
-    grid-area: for-men;
-}
-
-.for-kids {
-    grid-area: for-kids;
-}
-
-.accesories {
-    grid-area: accesories;
-}
-
-.featured-items {
-    display: flex;
-    flex-direction: column;
-    margin-top: 96px;
-}
-
-.featured-items-heading {
-    text-align: center;
-    font-size: 30px;
-    line-height: 36px;
-    color: #222222;
-}
-
-.featured-items-paragraph {
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
-    margin-top: 6px;
+.marked-red {
+    color: #F16D7F !important;
 }
 
 .products-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin-top: 48px;
 }
 
 .product-name {
@@ -188,27 +74,8 @@ body {
     padding-bottom: 20px;
 }
 
-.button {
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #FF6A6A;
-    padding: 14px 39px;
-    display: inline-block;
-    margin-top: 49px;
-    align-self: center;
-}
-
-.button:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
-}
-
 .additional-info {
     background: #222224;
-    margin-top: 95px;
     padding-top: 104px;
     padding-bottom: 104px;
 }
@@ -377,52 +244,22 @@ body {
     color: #FBFBFB;
 }
 
-
-
 @media (max-width: 1024px) {
-
-.man {
-    margin: 0 100px;
-}
-
-.title-1st-line {
-    font-size: 44px;
-}
-
-.title-2nd-line {
-    font-size: 28px;
-}
-
-.special-offers-list {
-    margin-top: 20px;
-    grid-gap: 20px;
-} 
-
-.featured-items {
-    margin-top: 155px;
-}
-
 .products-list {
-    margin-top: 74px;
     grid-gap: 16px;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.button {
-    margin-top: 33px;
-}
+} 
 
 .additional-info {
-    margin-top: 65px;
     padding-top: 0;
     padding-bottom: 64px;
 }
-
+    
 .additional-info-card {
     max-width: 360px;
     margin-top: 48px;
 } 
-
+    
 .additional-info .container {
     flex-direction: column;
     align-items: center;
@@ -448,70 +285,21 @@ body {
 .subscription-form-title {
     margin-top: 48px;
 }
-
 }
 
-
-
 @media (max-width: 667px) {
-
 .menu-button {
     margin-right: 0;
 }    
-
+    
 .profile-button, .cart-button {
     display: none;
 }   
 
-.man {
-    display: none;
-}
-
-.title {
-    margin-right: 0;
-    margin: 0 auto;
-    flex-basis: 263px;
-}
-
-.title-1st-line {
-    font-size: 38px;
-}
-
-.title-2nd-line {
-    font-size: 20px;
-} 
-
-.special-offers-list {
-    margin-top: 64px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-     "for-women"
-     "for-men"
-     "for-kids"
-     "accesories"
-} 
-
-.accesories img {
-    object-fit: cover;
-}
-
-.featured-items {
-    margin-top: 64px;
-}
-
 .products-list {
-    margin-top: 64px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 8px;
-}
-
-.button {
-    margin-top: 40px;
-}
-
-.additional-info {
-    margin-top: 96px;
-}
+} 
 
 .subscription-form-title {
     margin-top: 60px;
@@ -531,12 +319,7 @@ body {
      "rights"
 } 
 
-
-
 .rights {
     margin-top: 40px;
 }
-
-
-
 } 
