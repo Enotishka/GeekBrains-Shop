@@ -44,9 +44,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    grid-template-areas:
-     "for-women for-men for-kids"
-     "accesories accesories accesories"
+    grid-template-areas: "for-women for-men for-kids" "accesories accesories accesories"
 }
 
 .special-offer {
@@ -135,88 +133,66 @@
 }
 
 @media (max-width: 1024px) {
-
-.man {
-    margin: 0 100px;
-}
-
-.title-1st-line {
-    font-size: 44px;
-}
-
-.title-2nd-line {
-    font-size: 28px;
-}
-
-.special-offers-list {
-    margin-top: 20px;
-    grid-gap: 20px;
-} 
-
-.featured-items {
-    margin-top: 155px;
-}
-
-.featured-items-paragraph {
-    margin-bottom: 74px;
-}
-
-.button {
-    margin-top: 33px;
-}
-
-.additional-info {
-    margin-top: 64px;
-}
+    .man {
+        margin: 0 100px;
+    }
+    .title-1st-line {
+        font-size: 44px;
+    }
+    .title-2nd-line {
+        font-size: 28px;
+    }
+    .special-offers-list {
+        margin-top: 20px;
+        grid-gap: 20px;
+    }
+    .featured-items {
+        margin-top: 155px;
+    }
+    .featured-items-paragraph {
+        margin-bottom: 74px;
+    }
+    .button {
+        margin-top: 33px;
+    }
+    .additional-info {
+        margin-top: 64px;
+    }
 }
 
 @media (max-width: 667px) {
-
-.man {
-    display: none;
-}
-
-.title {
-    margin-right: 0;
-    margin: 0 auto;
-    flex-basis: 263px;
-}
-
-.title-1st-line {
-    font-size: 38px;
-}
-
-.title-2nd-line {
-    font-size: 20px;
-} 
-
-.special-offers-list {
-    margin-top: 64px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-     "for-women"
-     "for-men"
-     "for-kids"
-     "accesories"
-} 
-
-.accesories img {
-    object-fit: cover;
-}
-
-.featured-items {
-    margin-top: 64px;
-}
-
-.featured-items-paragraph {
-    margin-bottom: 64px;
-}
-
-.button {
-    margin-top: 40px;
-}
-
-.additional-info {
-    margin-top: 96px;
-}
+    .man {
+        display: none;
+    }
+    .title {
+        margin-right: 0;
+        margin: 0 auto;
+        flex-basis: 263px;
+    }
+    .title-1st-line {
+        font-size: 38px;
+    }
+    .title-2nd-line {
+        font-size: 20px;
+    }
+    .special-offers-list {
+        margin-top: 64px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "for-women" "for-men" "for-kids" "accesories"
+    }
+    .accesories img {
+        object-fit: cover;
+    }
+    .featured-items {
+        margin-top: 64px;
+    }
+    .featured-items-paragraph {
+        margin-bottom: 64px;
+    }
+    .button {
+        margin-top: 40px;
+    }
+    .additional-info {
+        margin-top: 96px;
+    }
 }

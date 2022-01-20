@@ -7,6 +7,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    display: block;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1140px;
@@ -24,8 +28,18 @@ body {
     align-items: center;
 }
 
+.menu .left-panel {
+    display: flex;
+}
+
+.menu .right-panel {
+    display: flex;
+}
+
 .menu-item {
     margin-right: 33px;
+    display: flex;
+    align-items: center;
 }
 
 .marked-red {
@@ -59,7 +73,7 @@ body {
 }
 
 .product {
-    background: #F8F8F8;    
+    background: #F8F8F8;
 }
 
 .product img {
@@ -120,7 +134,6 @@ body {
     background-size: cover;
 }
 
-
 .news-subscription .container {
     display: flex;
     justify-content: space-between;
@@ -132,7 +145,7 @@ body {
     max-width: 360px;
 }
 
-.quote-image{
+.quote-image {
     align-self: center;
     margin-top: 97px;
 }
@@ -149,7 +162,7 @@ body {
     font-style: italic;
 }
 
-.subscription-form{
+.subscription-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +212,6 @@ body {
     border-bottom-right-radius: 30px;
 }
 
-
 .socials {
     background-color: #222224;
     padding: 30px 0;
@@ -215,8 +227,8 @@ body {
 }
 
 .social-link:hover {
-    background-color: #F16D7F;  
-} 
+    background-color: #F16D7F;
+}
 
 .social-link img {
     left: 50%;
@@ -227,14 +239,15 @@ body {
 
 .socials .container {
     display: grid;
-    
-    grid-template-columns: auto  1fr auto;
-    grid-template-areas:
-     "rights . socials-panel"   
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "rights . socials-panel"
 }
 
 .socials-panel {
     grid-area: socials-panel;
+    display: flex;
+    align-items: center;
 }
 
 .rights {
@@ -245,81 +258,66 @@ body {
 }
 
 @media (max-width: 1024px) {
-.products-list {
-    grid-gap: 16px;
-    grid-template-columns: repeat(2, 1fr);
-} 
-
-.additional-info {
-    padding-top: 0;
-    padding-bottom: 64px;
-}
-    
-.additional-info-card {
-    max-width: 360px;
-    margin-top: 48px;
-} 
-    
-.additional-info .container {
-    flex-direction: column;
-    align-items: center;
-}
-
-.news-subscription {
-    padding-bottom: 140px;
-}
-
-.news-subscription .container {
-    flex-direction: column;
-    align-items: center;
-}
-
-.subscription-form{
-    margin-right: 0;
-} 
-
-.quote-image{
-    margin-top: 64px;
-}
-
-.subscription-form-title {
-    margin-top: 48px;
-}
+    .products-list {
+        grid-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .additional-info {
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+    .additional-info-card {
+        max-width: 360px;
+        margin-top: 48px;
+    }
+    .additional-info .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-subscription {
+        padding-bottom: 140px;
+    }
+    .news-subscription .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscription-form {
+        margin-right: 0;
+    }
+    .quote-image {
+        margin-top: 64px;
+    }
+    .subscription-form-title {
+        margin-top: 48px;
+    }
 }
 
 @media (max-width: 667px) {
-.menu-button {
-    margin-right: 0;
-}    
-    
-.profile-button, .cart-button {
-    display: none;
-}   
-
-.products-list {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 8px;
-} 
-
-.subscription-form-title {
-    margin-top: 60px;
+    .menu-button {
+        margin-right: 0;
+    }
+    .profile-button,
+    .cart-button {
+        display: none;
+    }
+    .products-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+    }
+    .subscription-form-title {
+        margin-top: 60px;
+    }
+    .socials {
+        padding-bottom: 9px;
+        padding-top: 43px;
+    }
+    .socials .container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "socials-panel" "rights"
+    }
+    .rights {
+        margin-top: 40px;
+    }
 }
-
-.socials {
-    padding-bottom: 9px ;
-    padding-top: 43px;
-}
-
-.socials .container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-     "socials-panel"
-     "rights"
-} 
-
-.rights {
-    margin-top: 40px;
-}
-} 
