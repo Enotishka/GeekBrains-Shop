@@ -34,7 +34,7 @@
     line-height: 17px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "filter-menu sorting-panel ."
+    grid-template-areas: "filter-menu sorting-panel .";
 }
 
 .filter-menu {
@@ -102,7 +102,7 @@
     .filter {
         padding-bottom: 40px;
         grid-template-columns: repeat(2, auto);
-        grid-template-areas: "filter-menu sorting-panel"
+        grid-template-areas: "filter-menu sorting-panel";
     }
     .sorting-panel {
         justify-self: right;

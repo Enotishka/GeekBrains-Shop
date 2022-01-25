@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    grid-template-areas: "for-women for-men for-kids" "accesories accesories accesories"
+    grid-template-areas: "for-women for-men for-kids" "accesories accesories accesories";
 }
 
 .special-offer {
@@ -178,7 +178,7 @@
     .special-offers-list {
         margin-top: 64px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "for-women" "for-men" "for-kids" "accesories"
+        grid-template-areas: "for-women" "for-men" "for-kids" "accesories";
     }
     .accesories img {
         object-fit: cover;
