@@ -1,5 +1,5 @@
 .intro {
-    background-color: #F1E4E6;
+    background-color: #f1e4e6;
 }
 
 .intro .container {
@@ -63,13 +63,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
 .special-offer-marked {
     font-size: 24px;
-    color: #F16D7F;
+    color: #f16d7f;
 }
 
 .for-women {
@@ -105,7 +105,7 @@
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-    color: #9F9F9F;
+    color: #9f9f9f;
     margin-top: 6px;
     margin-bottom: 48px;
 }
@@ -113,10 +113,10 @@
 .button {
     font-size: 16px;
     line-height: 19px;
-    color: #F26376;
+    color: #f26376;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #FF6A6A;
+    border: 1px solid #ff6a6a;
     padding: 14px 39px;
     display: inline-block;
     margin-top: 49px;
@@ -124,8 +124,8 @@
 }
 
 .button:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
+    background-color: #f16d7f;
+    color: #ffffff;
 }
 
 .additional-info {

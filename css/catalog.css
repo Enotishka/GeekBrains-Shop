@@ -1,5 +1,5 @@
 .category {
-    background-color: #F8F3F4;
+    background-color: #f8f3f4;
 }
 
 .category .container {
@@ -55,7 +55,7 @@
     grid-gap: 28px;
     grid-area: sorting-panel;
     justify-self: center;
-    color: #6F6E6E;
+    color: #6f6e6e;
 }
 
 .sorting-panel-item {
@@ -74,7 +74,7 @@
     width: 284px;
     height: 44px;
     box-sizing: border-box;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     margin-top: 48px;
     margin-bottom: 96px;
     margin-left: auto;
@@ -95,7 +95,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #EBEBEB;
+    color: #ebebeb;
 }
 
 @media (max-width: 1024px) {
