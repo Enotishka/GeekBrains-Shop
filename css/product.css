@@ -1,0 +1,127 @@
+.product-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 777px;
+  background-color: #f7f7f7;
+  background-image: url(../img/product-preview.jpg);
+  background-size: auto 724px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow {
+  padding: 13px 17px;
+  background-color: rgba(42, 42, 42, 0.15);
+}
+
+.product-info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: -65px;
+  margin-bottom: 130px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border: 1px solid #eaeaea;
+}
+
+.product-info-panel .category {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.product-info-panel .separator {
+  height: 3px;
+  width: 63px;
+  background-color: #ef5b70;
+  margin: 12px 0;
+}
+
+.product-info-panel .name {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+  margin-bottom: 48px;
+}
+
+.product-info-panel .description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5e5e;
+  max-width: 555px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.product-info-panel .price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ef5b70;
+  margin-bottom: 65px;
+}
+
+.product-info-panel .product-info-footer {
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px;
+}
+
+.product-info-panel .product-properties-list {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  display: flex;
+  gap: 23px;
+  margin-bottom: 50px;
+}
+
+.product-info-panel .product-property {
+  display: flex;
+  gap: 9px;
+}
+
+.products-list-panel {
+  margin-bottom: 128px;
+}
+
+.button {
+  display: flex;
+  gap: 23px;
+  padding-top: 16px;
+  padding-right: 57px;
+  padding-left: 24px;
+}
+
+@media (max-width: 1024px) {
+  .product-preview {
+    background-size: auto 585px;
+    height: 624px;
+  }
+
+  .product-6 {
+    display: none;
+  }
+}
+
+@media (max-width: 667px) {
+  .product-preview {
+    background-size: auto 454px;
+  }
+
+  .product-info-panel .product-properties-list {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .products-list-panel {
+    margin-bottom: 64px;
+  }
+}
