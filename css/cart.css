@@ -5,6 +5,11 @@
   padding-bottom: 129px;
 }
 
+.cart-panel-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .added-products-list {
   display: flex;
   flex-direction: column;
@@ -14,7 +19,7 @@
 .added-product {
   display: flex;
   width: 652px;
-  max-height: 306px;
+  height: 306px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 
@@ -166,4 +171,32 @@
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .cart-panel .container {
+    flex-direction: column;
+    padding-top: 59px;
+    gap: 65px;
+  }
+
+  .cart-panel-right {
+    flex-direction: row;
+  }
+
+  .added-product {
+    width: auto;
+  }
+
+  .cart-edit-buttons {
+    margin-top: 62px;
+    justify-content: normal;
+    align-self: center;
+    gap: 48px;
+  }
+
+  .total-panel {
+    margin-top: 39px;
+    align-self: flex-start;
+  }
 }
