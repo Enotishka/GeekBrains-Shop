@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding-top: 96px;
   padding-bottom: 129px;
+  gap: 16px;
 }
 
 .cart-panel-left {
@@ -56,10 +57,6 @@
   line-height: 30px;
 }
 
-.added-product .cross {
-  align-self: flex-start;
-}
-
 .added-product .quantity {
   display: flex;
   align-items: center;
@@ -67,9 +64,18 @@
 }
 
 .added-product .quantity .number {
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
   border: 1px solid #eaeaea;
   padding: 0 20px;
   box-sizing: content-box;
+}
+
+.added-product .cross {
+  width: 18px;
+  height: 18px;
+  align-self: flex-start;
 }
 
 .cart-edit-buttons {
@@ -97,7 +103,6 @@
   display: flex;
   flex-direction: column;
   gap: 21px;
-  min-width: 360px;
 }
 
 .shipping-adress h3 {
@@ -182,6 +187,7 @@
 
   .cart-panel-right {
     flex-direction: row;
+    gap: 16px;
   }
 
   .added-product {
@@ -195,8 +201,85 @@
     gap: 48px;
   }
 
+  .shipping-adress {
+    flex-grow: 1;
+    flex-basis: 1px;
+  }
+
   .total-panel {
     margin-top: 39px;
     align-self: flex-start;
+  }
+}
+
+@media (max-width: 667px) {
+  .category-panel .container {
+    padding-top: 50px;
+  }
+
+  .cart-panel .container {
+    gap: 48px;
+    padding-bottom: 96px;
+    padding-top: 39px;
+  }
+
+  .added-product {
+    height: 188px;
+  }
+
+  .added-product .image {
+    width: 144px;
+    height: 188px;
+  }
+
+  .added-product .description {
+    padding: 14px 17px 26px 17px;
+  }
+
+  .added-product .description h2 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+
+  .added-product .description p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .added-product .quantity .number {
+    padding: 0 8px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .added-product .cross {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cart-edit-buttons {
+    gap: 10px;
+    align-self: auto;
+    margin-top: 30px;
+  }
+
+  .cart-edit-buttons .button {
+    font-size: 12px;
+    line-height: 14px;
+    color: #575757;
+    padding: 9px 9px;
+    flex-grow: 1;
+    flex-basis: 1px;
+  }
+
+  .cart-panel-right {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .total-panel {
+    margin-top: 0;
+    align-self: center;
   }
 }
