@@ -1,0 +1,116 @@
+.b-registration-panel .container {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.b-registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-registration-form__label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.b-registration-form__input {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  margin-top: 20px;
+  padding: 14px 17px;
+  border: 1px solid #a4a4a4;
+}
+
+.b-registration-form__input::placeholder {
+  color: #b1b1b1;
+}
+
+.b-registration-form__gender {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 34px;
+}
+
+.b-registration-form__radio-label {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.b-registration-form__instructions {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  margin-top: 16px;
+}
+
+.b-registration-form__button {
+  background-color: #f16d7f;
+  color: #ffffff;
+  align-self: flex-start;
+  background-image: url(../img/long-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: right 29px center;
+  padding-right: 66px;
+  margin-top: 40px;
+}
+
+.b-loyalty-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.b-loyalty-perks__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.b-loyalty-perks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.b-loyalty-perks__list-item {
+  list-style-type: none;
+  background-image: url(../img/check-icon.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 43px;
+}
+
+@media (max-width: 1024px) {
+  .b-registration-panel .container {
+    gap: 22px;
+    padding-top: 40px;
+  }
+
+  .b-loyalty-perks__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 667px) {
+  .b-registration-panel .container {
+    flex-direction: column;
+  }
+
+  .b-registration-panel .container {
+    gap: 40px;
+  }
+}

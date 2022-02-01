@@ -1,145 +1,110 @@
-.category {
-    background-color: #F8F3F4;
-}
-
-.category .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.category-name {
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 400;
-}
-
-.category-path {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-}
-
-.category-path .marked-red {
-    font-weight: 700;
-}
-
 .filter {
-    padding-bottom: 65px;
-    padding-top: 51px;
-    font-size: 14px;
-    line-height: 17px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "filter-menu sorting-panel .";
+  padding-bottom: 65px;
+  padding-top: 51px;
+  font-size: 14px;
+  line-height: 17px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "filter-menu sorting-panel .";
 }
 
 .filter-menu {
-    display: flex;
-    grid-area: filter-menu;
-    font-weight: 600;
-    padding-left: 16px;
+  display: flex;
+  grid-area: filter-menu;
+  font-weight: 600;
+  padding-left: 16px;
 }
 
 .filter-menu img {
-    align-self: center;
-    margin-left: 11px;
+  align-self: center;
+  margin-left: 11px;
 }
 
 .sorting-panel {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 28px;
-    grid-area: sorting-panel;
-    justify-self: center;
-    color: #6F6E6E;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 28px;
+  grid-area: sorting-panel;
+  justify-self: center;
+  color: #6f6e6e;
 }
 
 .sorting-panel-item {
-    display: flex;
-    height: 17px;
+  display: flex;
+  height: 17px;
 }
 
 .sorting-panel-item img {
-    align-self: center;
-    margin-left: 10px;
+  align-self: center;
+  margin-left: 10px;
 }
 
 .pagination {
-    display: flex;
-    align-items: center;
-    width: 284px;
-    height: 44px;
-    box-sizing: border-box;
-    border: 1px solid #EBEBEB;
-    margin-top: 48px;
-    margin-bottom: 96px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  align-items: center;
+  width: 284px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  margin-top: 48px;
+  margin-bottom: 96px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pagination a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .pagination-item {
-    text-align: center;
-    flex-basis: 0;
-    flex-grow: 1;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .page-number {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #EBEBEB;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ebebeb;
 }
 
 @media (max-width: 1024px) {
-    .filter {
-        padding-bottom: 40px;
-        grid-template-columns: repeat(2, auto);
-        grid-template-areas: "filter-menu sorting-panel";
-    }
-    .sorting-panel {
-        justify-self: right;
-    }
-    .product-3 {
-        display: none;
-    }
-    .pagination {
-        margin-top: 40px;
-        margin-bottom: 64px;
-    }
+  .filter {
+    padding-bottom: 40px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "filter-menu sorting-panel";
+  }
+  .sorting-panel {
+    justify-self: right;
+  }
+  .product-3 {
+    display: none;
+  }
+  .pagination {
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
 }
 
 @media (max-width: 667px) {
-    .category .container {
-        flex-direction: column;
-        padding-top: 24px;
-        padding-bottom: 46px;
-        gap: 32px;
-    }
-    .filter {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    .filter-menu {
-        padding-left: 0;
-    }
-    .filter-menu p {
-        display: none;
-    }
-    .filter-menu img {
-        align-self: auto;
-        height: 25px;
-        width: auto;
-        margin-left: 0;
-    }
-    .sorting-panel {
-        grid-gap: 24px;
-    }
+  .filter {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .filter-menu {
+    padding-left: 0;
+  }
+  .filter-menu p {
+    display: none;
+  }
+  .filter-menu img {
+    align-self: auto;
+    height: 25px;
+    width: auto;
+    margin-left: 0;
+  }
+  .sorting-panel {
+    grid-gap: 24px;
+  }
 }
