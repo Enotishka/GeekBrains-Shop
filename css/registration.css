@@ -91,3 +91,26 @@
   background-position-y: center;
   padding-left: 43px;
 }
+
+@media (max-width: 1024px) {
+  .b-registration-panel .container {
+    gap: 22px;
+    padding-top: 40px;
+  }
+
+  .b-loyalty-perks__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 667px) {
+  .b-registration-panel .container {
+    flex-direction: column;
+  }
+
+  .b-registration-panel .container {
+    gap: 40px;
+  }
+}
